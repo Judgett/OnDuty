@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SoftDialog" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowMinWidthMajor">82%</item>
+        <item name="android:windowMinWidthMinor">82%</item>
+        <item name="android:backgroundDimAmount">0.42</item>
+        <item name="android:windowAnimationStyle">@style/SoftDialogAnim</item>
+    </style>
+
+    <style name="SoftDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="SoftTimePicker" parent="@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerTimeTextAppearance">@android:style/TextAppearance.Material.Headline</item>
+    </style>
+</resources>

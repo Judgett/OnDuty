@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">下班装死</string>
+    <string name="title_pick_app">选择应用</string>
+
+    <string name="brand">OnDuty · 工作通知免打扰</string>
+    <string name="mode_allow">放行中</string>
+    <string name="mode_silence">定向静默</string>
+
+    <string name="pill_time">时间窗</string>
+    <string name="pill_office">办公网</string>
+    <string name="pill_home">家庭网</string>
+    <string name="pill_vacation">休假</string>
+
+    <string name="perm_missing">未授予「通知使用权」，本应用读不到通知，所有判据都不会生效</string>
+    <string name="perm_btn">去开启</string>
+
+    <string name="sec_targets">接管哪些应用</string>
+    <string name="sec_schedule">上班时间窗</string>
+    <string name="sec_place">地点判据（Wi-Fi 指纹）</string>
+    <string name="sec_mode">执行方式</string>
+    <string name="sec_diag">运行诊断</string>
+
+    <string name="manage">管理</string>
+    <string name="no_target">还没有接管任何应用</string>
+
+    <string name="summary_title">收起后发一条无声摘要</string>
+    <string name="summary_hint">摘要只写条数与时间，不保存任何通知内容</string>
+
+    <string name="schedule_hint">时段内正常放行，其余时间收起目标应用的通知</string>
+    <string name="preset_legal">法定工作日</string>
+    <string name="preset_vacation">休假</string>
+    <string name="preset_every">每天</string>
+    <string name="to_time">至</string>
+    <string name="copyright_1">Copyright© 2026 HERE</string>
+    <string name="copyright_2">OnDuty | MIT License</string>
+
+    <string name="place_hint">点击记录当前网络；长按可删除绑定。只读取网关与 DNS，不定位、不上传</string>
+    <string name="office_net">办公网络</string>
+    <string name="home_net">家庭网络</string>
+    <string name="not_recorded">未记录</string>
+    <string name="record_now">记录当前网络</string>
+    <string name="place_switch_hint">连上办公网立即判为到岗、通知放行，无需等待；连上家庭网需连续满 5 分钟才判为下班、通知收起，防止 Wi-Fi 闪断误判。断网或连到陌生网络立即退出在岗，按时间窗判定。</string>
+
+    <string name="mode_explain">只对勾选的工作 App 生效：非工作时段把它们的通知从通知栏收起，并留一条无声摘要；其余应用不受影响。</string>
+    <string name="master_title">启用自动判定</string>
+    <string name="master_hint">关闭后所有规则暂停，通知全部正常提醒</string>
+
+    <string name="vacation_title">设置休假</string>
+    <string name="vacation_start_hint">起始时间（默认现在）</string>
+    <string name="vacation_days">持续时间</string>
+    <string name="vacation_end">结束休假，恢复自动判定</string>
+    <string name="day_1">1 天</string>
+    <string name="day_2">2 天</string>
+    <string name="day_3">3 天</string>
+    <string name="day_7">7 天</string>
+
+    <string name="clear_log">清空</string>
+    <string name="search_hint">搜索应用名</string>
+    <string name="done">完成</string>
+    <string name="no_match">没有匹配的应用</string>
+    <string name="loading_apps">正在读取应用列表…</string>
+
+    <string name="need_office_wifi">请先连上办公 Wi-Fi，再点「记录当前网络」</string>
+    <string name="fp_conflict">办公与家庭两张网的指纹完全相同（网关与 DNS 一致），无法区分，地点判据会自动忽略并在时间窗内放行</string>
+    <string name="fp_saved_office">已记录办公网络</string>
+    <string name="fp_saved_home">已记录家庭网络</string>
+    <string name="perm_notif_needed">系统未允许本应用发通知，摘要将无法显示</string>
+    <string name="help_body">【判定顺序】\n· 休假：开启后整段时间内全部放行，优先级最高。\n· 地点：连办公网视为上班（早到、加班都放行）；连家里网视为下班，收起目标 App 通知；其他网络按时间窗判定。\n· 时间窗：法定工作日内置国务院公布的 2026、2027 年放假日与调休补班日，无需联网；其余年份按周一至周五。时段外收起目标 App 通知。\n· 默认放行：任何判据缺失都不会把你静音一整天。\n\n【下班后一小时（前提：仍连办公网）】\n· 上班前提前连上：照常提醒，标记「已抵达」。\n· 下班后前 20 分钟：照常提醒，标记「休息中」，留给下班后仍用办公软件联系的情况。\n· 下班后 20–60 分钟：收起通知并发无声摘要，标记「休息中」。\n· 下班满 60 分钟：恢复提醒，标记「加班中」。\n已离开办公网时不适用上表，按地点 / 时间窗判定。\n\n【休假】\n在时间窗卡片点「休假」，可选起始日期时间，默认持续 1 天；期间所有通知正常提醒。诊断卡里可随时结束休假。\n\n【网络绑定】\n点「记录当前网络」绑定办公/家庭网络；长按该按钮可删除绑定。识别依据是网关与 DNS，不含 SSID、不定位、不上传。\n\n【为什么切网有延迟】\n· 连上办公网立即判为到岗、通知放行：正常只有坐到工位才会连办公网，无需等待。\n· 连上家庭网要连续满 5 分钟才判为下班、通知收起；收起比放行更保守，宁可晚收几分钟也不错收工作消息。\n· 断网或连到没记录过的 Wi-Fi 属于「明确不在岗」，立即生效不等倒计时；换网会重新计时。\n\n【已知局限】\n· 定向收起是先收到再撤掉，通知栏可能闪一下，提示音或振动可能已触发。\n· 被撤掉的通知不会补发，摘要只记条数与时间，不保存内容。\n· 系统级常驻通知（前台服务、安全提示）拦不住。\n· 节假日只内置 2026、2027 两年，其他年份按周一至周五判定，诊断区会注明。\n· 后台保活受厂商策略影响，无法保证 100% 准时。\n\n【权限与安全】\n只申请三项：通知使用权（撤回目标 App 通知）、POST_NOTIFICATIONS（无声摘要）、ACCESS_NETWORK_STATE（识别当前连的 Wi-Fi）。\n没有 INTERNET：完全不能联网，无上传、无统计、无远程配置。\n没有定位权限：不读 GPS、不读经纬度，也不读 Wi-Fi 名称，只用网关与 DNS 认网络。\n没有存储读写：不写外部存储，全部数据只在本应用私有目录；关闭了 allowBackup，连 adb backup 也导不出。\n没有通讯录、短信、通话、相机、录音、无障碍权限。通知正文从不落盘，只记条数、时间与应用名。\n\n【vivo / 魅族建议】\n设置 → 应用权限 → 下班装死 → 允许自启动、允许后台运行、允许后台高耗电；最近任务里锁定应用。</string>
+</resources>

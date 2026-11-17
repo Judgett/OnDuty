@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="18dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vacation_start_hint"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <DatePicker
+            android:id="@+id/dpVacation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <TimePicker
+            android:id="@+id/tpVacation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/vacation_days"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <RadioGroup
+            android:id="@+id/rgVacationDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbDay1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/day_1"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/bg_chip_select"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDay2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/day_2"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/bg_chip_select"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDay3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/day_3"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/bg_chip_select"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbDay7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/day_7"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/bg_chip_select"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

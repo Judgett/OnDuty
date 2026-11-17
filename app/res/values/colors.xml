@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色与 logo 对齐：#2563EB（Solar 月星蓝） -->
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1E40AF</color>
+    <color name="primary_soft">#E8F0FE</color>
+    <color name="accent">#3B82F6</color>
+    <color name="bg">#F4F7FC</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text_primary">#172033</color>
+    <color name="text_secondary">#64708A</color>
+    <color name="text_hint">#98A5BC</color>
+    <color name="divider">#E6ECF7</color>
+    <color name="warn">#C05A3F</color>
+    <color name="ok">#2E9E6B</color>
+    <color name="pill_bg">#EAF1FD</color>
+    <color name="hero_start">#2563EB</color>
+    <color name="hero_end">#1E40AF</color>
+    <color name="ic_bg">#2563EB</color>
+</resources>
