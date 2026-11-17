@@ -78,10 +78,13 @@ Write-Output "== 6. zipalign"
 Invoke-Checked "$BT\zipalign.exe" @("-f", "-p", "4", "$OUT\base.apk", "$OUT\aligned.apk") "zipalign"
 
 Write-Output "== 7. sign"
-# 签名口令不入库：优先读环境变量 ONDUTY_KS_PASS，未设置时回退到本地默认值。
-# 公开仓库使用者请自备 keystore，并通过环境变量传入自己的口令。
+# 签名口令从环境变量读取，仓库中不含任何口令。
+# 本地构建前请先设置：$env:ONDUTY_KS_PASS = "你的 keystore 口令"
+# 若把口令写进脚本或提交到仓库，任何拿到源码的人都能用同证书签名。
 $ksPass = $env:ONDUTY_KS_PASS
-if ([string]::IsNullOrEmpty($ksPass)) { $ksPass = "shiftnotify2026" }
+if ([string]::IsNullOrEmpty($ksPass)) {
+    throw "未设置签名口令，请先执行: `$env:ONDUTY_KS_PASS = `"你的 keystore 口令`""
+}
 Invoke-Checked "$BT\apksigner.bat" @(
     "sign",
     "--ks", $KS,
